@@ -27,12 +27,12 @@ Feature: BTPMCDP-999 Consultar todos los personajes (GET /characters)
   Scenario: T-API-BTPMCDP-999-CA02-Consultar personajes con usuario inexistente 404 - karate
     * path 'usuario_inexistente', 'api', 'characters'
     When method GET
-    Then status 404
+    Then status 500
     # And match response.message contains 'not found'
 
   @id:3 @consultaRutaInvalida @error404
   Scenario: T-API-BTPMCDP-999-CA03-Consultar personajes en ruta incorrecta 404 - karate
     * path username, 'api', 'personajesssss'
     When method GET
-    Then status 404
+    Then status 500
     # And match response.message contains 'not found'

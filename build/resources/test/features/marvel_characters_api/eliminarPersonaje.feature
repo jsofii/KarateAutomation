@@ -8,7 +8,7 @@ Feature: Eliminar personaje
 
   @id:9 @eliminarExitoso
   Scenario: Eliminar personaje (exitoso)
-    Given path '1'
+    Given path '118''
     When method DELETE
     Then status 204
 

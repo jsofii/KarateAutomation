@@ -9,7 +9,7 @@ Feature: Actualizar personaje
 
   @id:7 @actualizarExitoso
   Scenario: Actualizar personaje (exitoso)
-    Given path '111'
+    Given path '118'
     And request
     """
     {

@@ -3,7 +3,7 @@ Feature: Obtener personaje por ID
 
   Background:
     * url 'http://bp-se-test-cabcd9b246a5.herokuapp.com'
-    * def username = 'testuser'
+    * def username = 'jsguerre'
     * path username, 'api', 'characters'
 
   @id:2 @personajeExiste
